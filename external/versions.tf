@@ -1,14 +1,14 @@
 terraform {
   required_version = "~> 1.7"
-
-  backend "remote" {
+  backend "remote"  { 
     hostname     = "app.terraform.io"
-    organization = "khuedoan"
+    organization = "minhtri-ngt" 
 
-    workspaces {
-      name = "homelab-external"
-    }
-  }
+    workspaces { 
+      name = "homelab" 
+    
+  } 
+}
 
   required_providers {
     cloudflare = {
